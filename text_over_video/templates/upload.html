@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video</title>
+</head>
+<body>
+    <h1>Upload Video</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".mp4" required>
+        <br><br>
+        <label for="text">Text:</label>
+        <input type="text" name="text" id="text" required>
+        <br><br>
+        <label for="position">Text Position:</label>
+        <select name="position" id="position">
+            <option value="top_left">Top Left</option>
+            <option value="top_middle">Top Middle</option>
+            <option value="top_right">Top Right</option>
+            <option value="center_left">Center Left</option>
+            <option value="center_middle">Center Middle</option>
+            <option value="center_right">Center Right</option>
+            <option value="bottom_left">Bottom Left</option>
+            <option value="bottom_middle">Bottom Middle</option>
+            <option value="bottom_right">Bottom Right</option>
+        </select>
+        <br><br>
+        <label for="color">Text Color:</label>
+        <input type="color" name="color" id="color" value="#FFFFFF">
+        <br><br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
